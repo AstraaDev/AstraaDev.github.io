@@ -1,4 +1,3 @@
-
 name: Deploy
 
 on:
@@ -36,4 +35,5 @@ jobs:
         run: npm run deploy
         env:
           REACT_APP_YOUTUBE_API_KEY: ${{ secrets.REACT_APP_YOUTUBE_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
 
