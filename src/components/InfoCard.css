@@ -1,0 +1,43 @@
+/* InfoCard.css */
+.info-card {
+  background: #181818;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.info-card div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.info-card div strong {
+  margin-right: 10px;
+  width: 100px;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #e74c3c;
+  font-size: 1.1em;
+}
+
+.info-card div span {
+  margin-left: 5px;
+}
+
+a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
