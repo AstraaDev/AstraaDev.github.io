@@ -4,7 +4,7 @@ import './Tutorials.css';
 
 const Tutorials = () => {
   const videos = [
-    'https://www.youtube.com/watch?v=',
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   ];
 
   return (
