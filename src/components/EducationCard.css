@@ -1,0 +1,48 @@
+/* EducationCard.css */
+.education-card {
+    background: #282A36;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 0.85rem;
+    width: 100%;
+  }
+  
+  .education-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .education-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .education-bullet {
+    margin-right: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .education-details {
+    flex: 1;
+  }
+  
+  .education-dates {
+    font-size: 0.6rem;
+    margin-bottom: 5px;
+  }
+  
+  .education-degree {
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .education-institution {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+  
