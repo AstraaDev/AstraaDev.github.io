@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.d320f27c.css",
-    "main.js": "/static/js/main.74f3b30b.js",
+    "main.css": "/static/css/main.9f20e25f.css",
+    "main.js": "/static/js/main.6ae81223.js",
     "static/media/astraadev.png": "/static/media/astraadev.43ae560dfd6dcb610487.png",
     "index.html": "/index.html",
-    "main.d320f27c.css.map": "/static/css/main.d320f27c.css.map",
-    "main.74f3b30b.js.map": "/static/js/main.74f3b30b.js.map"
+    "main.9f20e25f.css.map": "/static/css/main.9f20e25f.css.map",
+    "main.6ae81223.js.map": "/static/js/main.6ae81223.js.map"
   },
   "entrypoints": [
-    "static/css/main.d320f27c.css",
-    "static/js/main.74f3b30b.js"
+    "static/css/main.9f20e25f.css",
+    "static/js/main.6ae81223.js"
   ]
 }
