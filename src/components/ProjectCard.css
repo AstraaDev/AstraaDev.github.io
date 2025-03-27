@@ -28,10 +28,13 @@
 }
 
 .project-link {
-  color: #e74c3c;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-size: 0.7rem;
+  transition: background-color 0.3s;
 }
 
 .project-link:hover {
