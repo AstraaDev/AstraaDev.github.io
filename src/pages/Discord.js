@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import './Discord.css';
 
 const Discord = () => {
-  useEffect(() => {
+  /* useEffect(() => {
     window.location.href = 'https://discord.gg/cA5cUXQTCG';
-  }, []);
+  }, []); */
 
   return (
     <div className="discord-page">
