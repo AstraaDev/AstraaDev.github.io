@@ -39,22 +39,33 @@ const VideoCard = ({ videoUrl }) => {
     return <div className="video-card">Loading...</div>;
   }
 
+  const embedUrl = `https://www.youtube.com/embed/${videoData.id}`;
+
   return (
     <div className="video-card">
-      <iframe
-        width="100%"
-        height="200"
-        src={videoUrl}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        title={videoData.snippet.title}
-      ></iframe>
-      <h3>{videoData.snippet.title}</h3>
-      <p>{videoData.snippet.description}</p>
-      <div className="video-stats">
-        <span>👀 {videoData.statistics.viewCount}</span>
-        <span>👍 {videoData.statistics.likeCount}</span>
+      <div className="video-container">
+        <iframe
+          width="100%"
+          height="315"
+          src={embedUrl}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title={videoData.snippet.title}
+        ></iframe>
+      </div>
+      <div className="video-details">
+        <h3>{videoData.snippet.title}</h3>
+        <p>{videoData.snippet.description.split('\n').map((line, index) => (
+          <span key={index}>{line}<br /></span>
+        ))}</p>
+        <div className="video-stats">
+          <span>👀 {videoData.statistics.viewCount}</span>
+          <span>👍 {videoData.statistics.likeCount}</span>
+        </div>
+        <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="watch-button">
+          Watch on YouTube
+        </a>
       </div>
     </div>
   );
