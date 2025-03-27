@@ -9,9 +9,13 @@ const VideoCard = ({ videoUrl }) => {
     const videoId = videoUrl.split('v=')[1].split('&')[0];
     const fetchVideoData = async () => {
       try {
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoId}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`);
+        const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
+        if (!apiKey) {
+          throw new Error('API key is not defined');
+        }
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoId}&key=${apiKey}`);
         if (!response.ok) {
-          throw new Error('Failed to fetch video data');
+          throw new Error('Network response was not ok');
         }
         const data = await response.json();
         if (data.items && data.items.length > 0) {
