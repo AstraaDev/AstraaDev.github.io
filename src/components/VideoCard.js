@@ -62,6 +62,7 @@ const VideoCard = ({ videoUrl }) => {
         <div className="video-stats">
           <span>👀 {videoData.statistics.viewCount}</span>
           <span>👍 {videoData.statistics.likeCount}</span>
+          <span>💬 {videoData.statistics.commentCount}</span>
         </div>
         <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="watch-button">
           Watch on YouTube
